@@ -16,14 +16,29 @@ public class ShoppingCart {
     By deleteItem2= By.xpath("//a[@data-id-product='2']");
     By totalValue= By.cssSelector(".cart-total .value");
 
-    public ShoppingCart(WebDriver driver) {this.driver = driver;}
-    public WebElement getHavePromo() {return driver.findElement(havePromo);}
-    public WebElement getPromoTextBox() {return driver.findElement(promoTextBox);}
-    public WebElement getPromoAddButton() {return driver.findElement(promoAddButton);}
-    public WebElement getProceedToCheckOut() {return driver.findElement(proceedToCheckOut);}
-    public WebElement getDeleteItem() {return driver.findElement(deleteItem);}
-    public WebElement getDeleteItem2() {return driver.findElement(deleteItem2);}
-    public WebElement getTotalValue() {return driver.findElement(totalValue);}
-
+    public ShoppingCart(WebDriver driver) {
+        this.driver = driver;
+    }
+    public WebElement getHavePromo() {
+        return driver.findElement(havePromo);
+    }
+    public WebElement getPromoTextBox() {
+        return driver.findElement(promoTextBox);
+    }
+    public WebElement getPromoAddButton() {
+        return driver.findElement(promoAddButton);
+    }
+    public WebElement getProceedToCheckOut() {
+        return driver.findElement(proceedToCheckOut);
+    }
+    public WebElement getDeleteItem() {
+        return driver.findElement(deleteItem);
+    }
+    public WebElement getDeleteItem2() {
+        return driver.findElement(deleteItem2);
+    }
+    public WebElement getTotalValue() {
+        return driver.findElement(totalValue);
+    }
 
 }
