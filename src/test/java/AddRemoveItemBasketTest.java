@@ -1,5 +1,3 @@
-package uk.co.automationtesting;
-
 import java.io.IOException;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
