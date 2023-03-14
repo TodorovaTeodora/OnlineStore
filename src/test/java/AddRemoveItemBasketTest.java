@@ -41,7 +41,7 @@ public class AddRemoveItemBasketTest extends BasePage {
 		// creating an object of the automationtesting.co.uk webpage
 		Homepage home = new Homepage(driver);
 		
-		//handle cookie visibility using JSE - added 20230217
+		//handle cookie visibility using JSE
 		JavascriptExecutor jse = (JavascriptExecutor)getDriver();
 		jse.executeScript("arguments[0].scrollIntoView()", home.getTestStoreLink()); 
 		home.getTestStoreLink().click();
@@ -50,8 +50,7 @@ public class AddRemoveItemBasketTest extends BasePage {
 		ShopHomepage shopHome = new ShopHomepage(driver);
 		shopHome.getProdOne().click();
 
-		// creating an object of the shop products page (when a product has been
-		// selected)
+		// creating an object of the shop products page (when a product has been selected)
 		ShopProductPage shopProd = new ShopProductPage(driver);
 		Select option = new Select(shopProd.getSizeOption());
 		option.selectByVisibleText("M");
