@@ -28,7 +28,7 @@ public class AddRemoveItemBasketTest extends Hooks {
 		// creating an object of the automationtesting.co.uk webpage
 		Homepage home = new Homepage();
 
-		//handle cookie visibility using JSE - added 20230217
+		//handle cookie visibility using JSE
 		JavascriptExecutor jse = (JavascriptExecutor)getDriver();
 		jse.executeScript("arguments[0].scrollIntoView()", home.getTestStoreLink()); 
 		home.getTestStoreLink().click();
