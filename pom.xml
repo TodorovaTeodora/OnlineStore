@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>uk.co.automationtesting</groupId>
-	<artifactId>liveproject1</artifactId>
+	<artifactId>onlinestore</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>liveproject1</name>
+	<name>onlinestore</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
