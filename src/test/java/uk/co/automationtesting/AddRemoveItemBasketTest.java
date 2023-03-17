@@ -20,7 +20,7 @@ public class AddRemoveItemBasketTest extends Hooks {
 
 	public AddRemoveItemBasketTest() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Test
@@ -28,8 +28,8 @@ public class AddRemoveItemBasketTest extends Hooks {
 		// creating an object of the automationtesting.co.uk webpage
 		Homepage home = new Homepage();
 
-		//handle cookie visibility using JSE
 		JavascriptExecutor jse = (JavascriptExecutor)getDriver();
+		home.getToggle().click();
 		jse.executeScript("arguments[0].scrollIntoView()", home.getTestStoreLink()); 
 		home.getTestStoreLink().click();
 
