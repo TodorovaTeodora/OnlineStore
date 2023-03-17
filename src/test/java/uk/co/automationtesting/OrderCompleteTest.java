@@ -32,7 +32,10 @@ public class OrderCompleteTest extends Hooks {
 
 		//handles cookie prompt
 		home.getCookie().click();
-
+		
+                JavascriptExecutor jse = (JavascriptExecutor)getDriver();
+		home.getToggle().click();
+		jse.executeScript("arguments[0].scrollIntoView()", home.getTestStoreLink()); 
 		home.getTestStoreLink().click();
 
 		// creating an object of the test store homepage
